@@ -7,7 +7,7 @@ from fastapi import FastAPI
 APIOps =  FastAPI()
 
 
-@APIOps.get('/phrase')
+@APIOps.get('/')
 def PhraseGenerator():
     n = random.randint(0,len(Phrases)-1)
 
