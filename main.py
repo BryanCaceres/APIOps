@@ -1,11 +1,7 @@
 import random
-
-from phrase_list import Phrases
-
 from fastapi import FastAPI
 
 app =  FastAPI()
-
 
 @app.get('/')
 def PhraseGenerator():
@@ -17,6 +13,7 @@ def PhraseGenerator():
     ['La creatividad requiere que la valentía se desprenda de las certezas','Erich Fromm'],
     ['Aquellos que no conocen la historia están condenados a repetirla','Edmund Burke']
     ]
+
     n = random.randint(0,len(Phrases)-1)
 
     
