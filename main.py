@@ -4,7 +4,7 @@ from phrase_list import Phrases
 
 from fastapi import FastAPI
 
-APIOps =  FastAPI()
+app =  FastAPI()
 
 
 @APIOps.get('/')
